@@ -5,6 +5,11 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      colors: {
+        'product-card-border':'#ebebeb',
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -540,6 +545,7 @@ module.exports = {
       0: '0px',
       full: '100%',
       screen: '100vh',
+      '[65px]': '65px',
     },
     minWidth: {
       0: '0px',

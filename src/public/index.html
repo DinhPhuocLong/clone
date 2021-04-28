@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../plugin/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../plugin/owlcarousel/assets/owl.theme.default.css">
 </head>
 
 <body class="box-border mb-20">
@@ -17,7 +19,7 @@
         <img class="mr-10" src="https://petshopsaigon.vn/wp-content/uploads/2018/01/new-logo.png" width="140px"
             height="80" alt="" />
         <!-- Search -->
-        <form class="flex xl:mr-10">
+        <form class="flex xl:mr-10 mb-2 sm:mb-0">
             <input
                 class="pl-2 pr-44 py-1 border-solid border-2 border-r-0 border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent place-content-start rounded-lg rounded-r-none outline-none"
                 type="text" placeholder="Nhập nội dung tìm kiếm" />
@@ -66,7 +68,7 @@
             <!-- Shopping cart -->
             <div>
                 <a href="#"
-                    class="bg-white border-solid border-2 border-yellow-500  w-10 h-10 rounded-full flex items-center justify-center relative">
+                    class="bg-white border-solid border-2 border-yellow-500 w-10 h-10 rounded-full flex items-center justify-center relative">
                     <i class="fas fa-shopping-cart"></i>
                     <span
                         class="absolute top-0 right-0 transform -translate-y-1/2 translate-x-1/3 bg-yellow-500 rounded-full text-xs w-5 h-5 text-center text-white">1</span>
@@ -75,35 +77,231 @@
         </div>
     </nav>
     <!-- Banner section -->
-    <div class="w-full">
+    <div class="w-full mb-4">
         <!-- Title -->
         <h1 class="font-sans text-center py-4 text-2xl font-medium">
             Pet Shop Lâm Đồng - Thức ăn phụ kiện cho thú cưng chó mèo
         </h1>
-        
-        <div class="flex">
-            <div class="w-[60%] bg-indigo-300">
-                <img class="w-full h-full" src="https://petshopsaigon.vn/wp-content/uploads/2019/08/pet-shop-sai-gon-4.jpg" alt="">
+
+        <div class="lg:flex">
+            <div class="lg:w-[60%] w-full mb-2 lg:mb-0 bg-indigo-300">
+                <img class="w-full h-full"
+                    src="https://petshopsaigon.vn/wp-content/uploads/2019/08/pet-shop-sai-gon-4.jpg" alt="" />
             </div>
-            <div class="w-[40%] grid grid-cols-2 gap-2 ml-2">
+            <div class="lg:w-[40%] grid grid-cols-2 gap-4 lg:ml-2">
                 <div>
-                    <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/thuc-an-cho-cho-banner.jpg" alt="">
+                    <a href="#">
+                        <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/thuc-an-cho-cho-banner.jpg"
+                            alt="" /></a>
                 </div>
                 <div>
-                    <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/thuc-an-cho-cho-banner.jpg" alt="">
+                    <a href="#">
+                        <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/thuc-an-cho-meo-banner.jpg"
+                            alt="" /></a>
                 </div>
                 <div>
-                    <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/thuc-an-cho-cho-banner.jpg" alt="">
+                    <a href="#">
+                        <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/cham-soc-cho-meo-banner.jpg"
+                            alt="" /></a>
                 </div>
                 <div>
-                    <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/thuc-an-cho-cho-banner.jpg" alt="">
+                    <a href="#">
+                        <img src="https://petshopsaigon.vn/wp-content/uploads/2020/06/suc-khoe-cho-meo-banner.jpg"
+                            alt="" /></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Best seller -->
+    <!-- Best seller carousel-->
+    <div class="mx-auto xl:w-[1170px] w-10/12">
+        <a class="border-solid border-b-2 w-full block py-4 border-gray-100 mb-8 text-xl font-medium 
+        text-green-500 hover:text-yellow-500 hover: hover:underline" href="#">SẢN PHẨM BÁN CHẠY</a>
+        <div class="grid grid-cols-5 owl-carousel">
+
+            <div class="border-solid border border-product-card-border p-4 flex flex-col m-0">
+                <div class="p-4 pb-0 overflow-hidden">
+                    <a class="w-full" href="#">
+                        <img class="transform hover:scale-125 transition ease-in duration-75"
+                            src="https://petshopsaigon.vn/wp-content/uploads/2021/01/gel-dinh-duong-gimdog-beauty-50g-1-300x300.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="font-sans text-[15px] font-medium text-green-500 mb-2 leading-5 min-h-[65px]">
+                    <a href="#">Thức ăn hữu cơ cho chó Natural Core 500g
+                        - 100% tự nhiên - Hàn Quốc
+                    </a>
+                </div>
+                <div class="mb-2">
+                    <b>Hãng:</b>
+                    <a href="#" class="font-sans text-[15px] font-medium text-green-500">Gimborn</a>
+                </div>
+                <div class="flex justify-between text-red-600 text-sm font-bold mb-2">
+                    <div>
+                        <div class="">295.000 ₫</div>
+                        <div class="line-through text-black text-xs font-normal">295.000 ₫</div>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fas fa-cart-plus" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-solid border border-product-card-border p-4 flex flex-col m-0">
+                <div class="p-4 pb-0 overflow-hidden">
+                    <a class="w-full" href="#">
+                        <img class="transform hover:scale-125 transition ease-in duration-75"
+                            src="https://petshopsaigon.vn/wp-content/uploads/2021/01/gel-dinh-duong-gimdog-beauty-50g-1-300x300.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="font-sans text-[15px] font-medium text-green-500 mb-2 leading-5 min-h-[65px]">
+                    <a href="#">Thức ăn hữu cơ cho chó Natural Core 500g
+                        - 100% tự nhiên - Hàn Quốc
+                    </a>
+                </div>
+                <div class="mb-2">
+                    <b>Hãng:</b>
+                    <a href="#" class="font-sans text-[15px] font-medium text-green-500">Gimborn</a>
+                </div>
+                <div class="flex justify-between text-red-600 text-sm font-bold mb-2">
+                    <div>
+                        <div class="">295.000 ₫</div>
+                        <div class="line-through text-black text-xs font-normal">295.000 ₫</div>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fas fa-cart-plus" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-solid border border-product-card-border p-4 flex flex-col m-0">
+                <div class="p-4 pb-0 overflow-hidden">
+                    <a class="w-full" href="#">
+                        <img class="transform hover:scale-125 transition ease-in duration-75"
+                            src="https://petshopsaigon.vn/wp-content/uploads/2021/01/gel-dinh-duong-gimdog-beauty-50g-1-300x300.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="font-sans text-[15px] font-medium text-green-500 mb-2 leading-5 min-h-[65px]">
+                    <a href="#">Thức ăn hữu cơ cho chó Natural Core 500g
+                        - 100% tự nhiên - Hàn Quốc
+                    </a>
+                </div>
+                <div class="mb-2">
+                    <b>Hãng:</b>
+                    <a href="#" class="font-sans text-[15px] font-medium text-green-500">Gimborn</a>
+                </div>
+                <div class="flex justify-between text-red-600 text-sm font-bold mb-2">
+                    <div>
+                        <div class="">295.000 ₫</div>
+                        <div class="line-through text-black text-xs font-normal">295.000 ₫</div>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fas fa-cart-plus" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-solid border border-product-card-border p-4 flex flex-col m-0">
+                <div class="p-4 pb-0 overflow-hidden">
+                    <a class="w-full" href="#">
+                        <img class="transform hover:scale-125 transition ease-in duration-75"
+                            src="https://petshopsaigon.vn/wp-content/uploads/2021/01/gel-dinh-duong-gimdog-beauty-50g-1-300x300.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="font-sans text-[15px] font-medium text-green-500 mb-2 leading-5 min-h-[65px]">
+                    <a href="#">Thức ăn hữu cơ cho chó Natural Core 500g
+                        - 100% tự nhiên - Hàn Quốc
+                    </a>
+                </div>
+                <div class="mb-2">
+                    <b>Hãng:</b>
+                    <a href="#" class="font-sans text-[15px] font-medium text-green-500">Gimborn</a>
+                </div>
+                <div class="flex justify-between text-red-600 text-sm font-bold mb-2">
+                    <div>
+                        <div class="">295.000 ₫</div>
+                        <div class="line-through text-black text-xs font-normal">295.000 ₫</div>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fas fa-cart-plus" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-solid border border-product-card-border p-4 flex flex-col m-0">
+                <div class="p-4 pb-0 overflow-hidden">
+                    <a class="w-full" href="#">
+                        <img class="transform hover:scale-125 transition ease-in duration-75"
+                            src="https://petshopsaigon.vn/wp-content/uploads/2021/01/gel-dinh-duong-gimdog-beauty-50g-1-300x300.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="font-sans text-[15px] font-medium text-green-500 mb-2 leading-5 min-h-[65px]">
+                    <a href="#">Thức ăn hữu cơ cho chó Natural Core 500g
+                        - 100% tự nhiên - Hàn Quốc
+                    </a>
+                </div>
+                <div class="mb-2">
+                    <b>Hãng:</b>
+                    <a href="#" class="font-sans text-[15px] font-medium text-green-500">Gimborn</a>
+                </div>
+                <div class="flex justify-between text-red-600 text-sm font-bold mb-2">
+                    <div>
+                        <div class="">295.000 ₫</div>
+                        <div class="line-through text-black text-xs font-normal">295.000 ₫</div>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fas fa-cart-plus" style="font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  rare products carousel -->
+
+
+
+
+
+
+
+
+    <script src="../plugin/jQuery/jquery.min.js"></script>
+    <script src="../plugin/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
-
