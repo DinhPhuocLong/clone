@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.shop-categories-title h2::before {
+    border-right: 8px solid #F59E0B;
+    content: "";
+    position: absolute;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    left: 0;
+    bottom: -8px;
+}

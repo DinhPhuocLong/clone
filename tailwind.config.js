@@ -546,6 +546,8 @@ module.exports = {
       full: '100%',
       screen: '100vh',
       '[65px]': '65px',
+      '[30px]': '30px',
+
     },
     minWidth: {
       0: '0px',

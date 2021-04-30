@@ -14122,6 +14122,10 @@ video {
   min-height: 65px;
 }
 
+.min-h-\[40px\] {
+  min-height: 40px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -32051,6 +32055,16 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.shop-categories-title h2::before {
+  border-right: 8px solid #F59E0B;
+  content: "";
+  position: absolute;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  left: 0;
+  bottom: -8px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -45621,6 +45635,10 @@ video {
 
   .sm\:min-h-\[65px\] {
     min-height: 65px;
+  }
+
+  .sm\:min-h-\[40px\] {
+    min-height: 40px;
   }
 
   .sm\:min-w-0 {
@@ -76954,6 +76972,10 @@ video {
     min-height: 65px;
   }
 
+  .md\:min-h-\[40px\] {
+    min-height: 40px;
+  }
+
   .md\:min-w-0 {
     min-width: 0px;
   }
@@ -108283,6 +108305,10 @@ video {
 
   .lg\:min-h-\[65px\] {
     min-height: 65px;
+  }
+
+  .lg\:min-h-\[40px\] {
+    min-height: 40px;
   }
 
   .lg\:min-w-0 {
@@ -139616,6 +139642,10 @@ video {
     min-height: 65px;
   }
 
+  .xl\:min-h-\[40px\] {
+    min-height: 40px;
+  }
+
   .xl\:min-w-0 {
     min-width: 0px;
   }
@@ -170947,6 +170977,10 @@ video {
     min-height: 65px;
   }
 
+  .\32xl\:min-h-\[40px\] {
+    min-height: 40px;
+  }
+
   .\32xl\:min-w-0 {
     min-width: 0px;
   }
@@ -188705,4 +188739,3 @@ video {
     --tw-backdrop-sepia: sepia(100%);
   }
 }
-
